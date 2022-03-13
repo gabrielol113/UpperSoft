@@ -1,0 +1,130 @@
+body {
+    background-color: #EFF0F3;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+header {
+    margin-top: 0%;
+    padding: 0;
+    padding-left: 0%;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    width: 100vw;
+    height: 50px;
+}
+
+#card {
+    border-radius: 5px;
+    background-color: white;
+    width: 50vw;
+    height: 500px;
+    padding-right: 20px;
+}
+/***************** FORMULARIOS ******************/
+form {
+    margin-left: 10%;
+}
+form a {
+    text-decoration: none;
+    color: #174DBA;
+    font-family: HelveticaNeue;
+    font-size: 12px;
+}
+form p {
+    color: #174DBA;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+}
+form label{
+    padding-top: 8px;
+    font-size: 16px;
+}
+form input {
+    border-radius: 3px;
+    border: 1px solid #174DBA;
+    height: 30px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+form input:hover {
+    border-radius: 3px;
+    border: 0px 0px 1px 0px solid #2aba17;
+    margin-bottom: 20px;
+}
+
+#btnSubmit {
+    width: 30vw;
+    background-color: #174DBA;
+    color: White;
+    height: 30px;
+    font-family: "HelveticaNeue";
+    font-size: 16px;
+}
+#btnSubmit:hover {
+    background-color: white;
+    color: grey;
+}
+
+#email, #name,#password,#gender,#state{
+    width: 100%;
+}
+
+/*************************************************/
+#corpo {   
+    padding-top: 10vh;
+    padding-left: 25vw; 
+    width: auto;
+    justify-content: center;
+}
+
+h1 {
+    padding-top: 10px;
+    color: #174DBA;
+    font-family: HelveticaNeue;
+    font-size: 32px;
+    text-align: center;
+}
+
+#cadastro {
+    display: flex;
+    float: left;
+}
+
+#div1{
+    margin-right: 50px;
+}
+@font-face {
+     font-family: "HelveticaNeue";
+      src: url("../fonts/Helvetica-Neue-Font/Helvetica\ Neue\ Medium\ Extended/Helvetica Neue Medium Extended.ttf"); 
+}
+/********************** Media Queries *********************/
+@media only screen and (max-width: 1100px) {
+    h1 {
+        padding-top: 50px;
+    }
+    body {
+        width: 30vw;
+        height: 100vh;
+        background-color: white;
+    }
+    #card {
+        margin-left: 0;
+        padding-left: 0;
+        width: 100vw;
+        border: 0px;        
+    }
+    #corpo{
+        padding-left: 0vw;
+        padding-top: 0vh;
+    }
+    #cadastro{
+        display: block;
+    }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/inicio.css" media="screen" />
+    <script type="text/javascript" src="./scripts/login.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <header style="background-color: blue;">
+        <img src="./assets/logo-uppersoft.svg">
+    </header>
+    <div id="corpo" align="center">
+        <div id="card">
+            <h1>Acessar</h1>
+            <form id="login-form" method="post">
+                <p>E-mail</p><input type="text" name="email" id="email">
+                <p>Senha</p><input type="password" name="senha" id="senha">
+                <br><input type="submit" name="btnSubmit" value="Entrar" id="btnSubmit" onclick="autenticateCredentials()">
+                <p style="color: rgb(77, 77, 77); font-style: normal;">Não possui conta? <a href="./cadastro.html">Cadastre-se aqui</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

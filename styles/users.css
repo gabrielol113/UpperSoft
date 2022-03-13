@@ -1,0 +1,132 @@
+body {
+    background-color: #d8d8d8;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    padding-left: 0%;
+    position: fixed;
+    text-align: center;
+    width: 100vw;
+    height: 50px;
+    top: 0;
+    z-index: 20;
+}
+/**********************LOADING ****************************/
+#load {
+    background-color: #d8d8d8;
+    position: fixed;
+    display: block;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 40vw;
+    padding-top: 40vh;
+ }
+
+#circle{
+    
+    animation: is-rotating 1s infinite;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 6px solid #e5e5e5;
+    border-top-color: #51d4db;
+}
+
+@keyframes is-rotating {
+    to {
+        transform: rotate(1turn);
+    }
+}
+/***********************************************************/
+h1 {
+    padding-left: 50px;
+    padding-top: 100px;
+    color: #174DBA;
+    font-family: HelveticaNeue;
+    font-size: 32px;
+    text-align: left;
+}
+
+#corpo {
+    width: 100vw;
+    height: 300px;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    z-index: 0;
+}
+.list-container{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 0.5fr));
+    grid-template-rows: 300px;
+    column-gap: 10px;
+    row-gap: 50px;
+}
+
+#icon{
+    position: relative;
+    top: 0;
+    left: 40px;
+    margin-bottom: 100px;
+    padding: 0;
+}
+#icon:hover{ cursor: pointer; }
+
+.card-container {
+    min-width: 200px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+    color: black;
+    font-family: HelveticaNeue;
+    text-align: center;
+    width: 300px;
+    padding-top: 20px;
+    height: 270px;
+
+}
+
+.round {
+    position: relative;
+    left: 20px;
+    border: 1px solid #03bfcb;
+    border-radius: 50%;
+    padding: 7px;
+    margin-left: auto;
+    
+
+}
+.name-container {
+    margin: 10px 0;
+}
+
+@font-face {
+     font-family: "HelveticaNeue";
+      src: url("../fonts/Helvetica-Neue-Font/Helvetica\ Neue\ Medium\ Extended/Helvetica Neue Medium Extended.ttf"); 
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        width: 30vw;
+        height: 100vh;
+    }
+    #corpo{
+        padding-left: 0vw;
+        padding-top: 0vh;
+    }
+}

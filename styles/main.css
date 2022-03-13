@@ -1,0 +1,219 @@
+/***************** FORMULARIOS ******************/
+/*************************************************/
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/Helvetica-Neue-Font/Helvetica Neue Medium Extended/Helvetica Neue Medium Extended.ttf");
+}
+
+body {
+  background-color: #EFF0F3;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  margin-top: 0%;
+  padding: 0;
+  padding-left: 0%;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  width: 100vw;
+  height: 50px;
+}
+
+#card {
+  border-radius: 5px;
+  background-color: white;
+  width: 100%;
+  max-width: 50vw;
+  height: 500px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+form {
+  padding: 0 10px;
+}
+
+form #div2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+}
+
+form #div2 .item {
+  max-width: 100%;
+  width: 100%;
+}
+
+form .row-gender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+form .formGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+form .formGroup input[type="radio"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 5px;
+  border-radius: 100%;
+  outline: 1px solid #174DBA;
+  outline-offset: 2px;
+  border: none;
+}
+
+form .formGroup input[type="radio"]:checked {
+  background-color: #174DBA;
+}
+
+form .formGroup label {
+  margin-right: 30px;
+  color: #174DBA;
+}
+
+form a {
+  text-decoration: none;
+  color: #174DBA;
+  -webkit-text-emphasis: bold;
+          text-emphasis: bold;
+  font-family: HelveticaNeue;
+  font-size: 12px;
+}
+
+form label {
+  color: #174DBA;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: normal;
+}
+
+form input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #174DBA;
+}
+
+#state {
+  padding: 10px;
+  height: 40px;
+}
+
+form input[type="text"], form input[type="password"], form input[type="state"] {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+form input[type="text"]:hover, form input[type="password"]:hover {
+  border-radius: 3px;
+  border: 0px 0px 1px 0px solid #174DBA;
+  margin-bottom: 20px;
+}
+
+#btnSubmit {
+  background-color: #174DBA;
+  color: #FFF;
+  font-family: "HelveticaNeue";
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#btnSubmit:hover {
+  background-color: #fff;
+  color: #808080;
+}
+
+#corpo {
+  padding-top: 10vh;
+  max-width: 100%;
+  width: 100%;
+}
+
+h1 {
+  padding-top: 10px;
+  color: #174DBA;
+  font-family: HelveticaNeue;
+  font-size: 32px;
+  text-align: center;
+}
+
+#cadastro {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+@media only screen and (max-width: 1100px) {
+  h1 {
+    padding-top: 50px;
+  }
+  body {
+    width: 30vw;
+    height: 100vh;
+    background-color: white;
+  }
+  #card {
+    margin-left: 0;
+    padding-left: 0;
+    width: 100vw;
+    border: 0px;
+  }
+  #corpo {
+    padding-left: 0vw;
+    padding-top: 0vh;
+  }
+  #cadastro {
+    display: block;
+  }
+}
+/*# sourceMappingURL=main.css.map */
